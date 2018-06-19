@@ -1,0 +1,129 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+html, body{
+   height: 100%;
+}
+
+body{
+   display: flex;
+   max-width: 1100px;
+   margin: auto;
+   position: relative;
+}
+
+header{
+   position: absolute;
+   height: 100%;
+   width: 275px;
+   background-color: red;
+   display: flex;
+   flex-direction: column;
+   background: #4B5C6B;
+   animation-name: slideDown;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+   0% { top: -100%;}
+   100% {top: 0;}
+
+}
+
+main{
+   position: absolute;
+   left: 25%;
+   width: 75%;
+   height: 100%;
+   background-color: #F9F9FF;
+   animation-name: slideLeft;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+   0% {left: 125%;}
+   100% {left: 275px;}
+}
+/* Container for the my picture */
+#pic_cnt{
+   width: 100%;
+   margin-top: 20px;
+   text-align: center;
+}
+
+#profile_pic{
+   width: 60%;
+   padding: 5px;
+   border-radius: 50%;
+   border: 2px solid white;
+}
+
+hr{
+   width: 100%;
+   margin-top: 20px;
+}
+/* the class section_cnt define padding and font color
+of the header section */
+.section_cnt{
+   padding-left: 10px;
+   color: white;
+}
+/* defining every title container */
+.title_white{
+   letter-spacing: 1.5px;
+   padding: 20px 0 10px;
+   font-size: 32px;
+}
+/* data_cnt store my personal info */
+.data_cnt{
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.data_cnt .icon_cnt{
+   margin-right: 20px;
+   width: 20px;
+   text-align: center;
+}
+/* social_media is the last section of my
+personal info. It contains social icon
+with link to my profiles */
+#social_media{
+   margin-top: 10px;
+   font-size: 22px;
+}
+
+#social_media .social_icon{
+   color: white;
+}
+
+#social_media .social_icon:hover{
+   color: yellow;
+}
+
+.social_icon:not(:first-child){
+   margin: 0 10px;
+}
+
+/* it's my container to show what programming
+language I know */
+.Skill_cnt .row_skill{
+   display: flex;
+   margin-bottom: 10px;
+}
+.Skill_cnt .row_skill .skill_itm{
+   width: calc(100% / 3);
+   font-size: 18px;
+}
+
+.Skill_cnt .row_skill .skill_itm.soft{
+   width: calc(100% / 2);
+}
