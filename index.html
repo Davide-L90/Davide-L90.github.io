@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
-      <title>My CV</title>
+      <title>Curriculum Vitae</title>
    </head>
    <body>
    <header>
@@ -13,75 +14,100 @@
          <img id="profile_pic" src="img/profile.jpg" alt="">
       </div>
       <hr>
-      <!-- <div class="section_cnt">
-         <h1 class="title_white">About me</h1>
-         <p>
-
-         </p>
-      </div> -->
-      <div class="section_cnt">
+      <div class="container-fluid pr-0 pl-1 pl-sm-3">
          <h1 class="title_white">Contact</h1>
-         <div class="data_cnt">
-            <div class="icon_cnt">
+         <div class="row no-gutters mb-2">
+            <div class="col-12 col-sm-2 icon_cnt">
                <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="">
-               <p>via P. Selvi 66</p>
-               <p>Pontassieve, Firenze</p>
+            <div class="col-12 col-sm-10">
+               Via P. Selvi, 66 - Pontassieve (Fi)
             </div>
          </div>
-         <div class="data_cnt">
-            <div class="icon_cnt">
+         <div class="row no-gutters mb-2">
+            <div class="col-12 col-sm-2 icon_cnt">
                <i class="fas fa-mobile-alt"></i>
             </div>
-            <p>329/9355367</p>
+            <div class="col-12 col-sm-10">
+               329/9355367
+            </div>
          </div>
-         <div class="data_cnt">
-            <div class="icon_cnt">
+         <div class="row no-gutters mb-2">
+            <div class="col-12 col-sm-2 icon_cnt">
                <i class="far fa-envelope-open"></i>
             </div>
-            <p>davide.lecci@icloud.com</p>
+            <div class="col-12 col-sm-10">
+               <span id="email_line">davide.lecci@icloud.com</span>
+            </div>
          </div>
-         <div id="social_media">
-            <a class="social_icon" href="https://github.com/Davide-L90"><i class="fab fa-github"></i></a>
-            <a class="social_icon" href="https://www.linkedin.com/in/davide-lecci-902858165/"><i class="fab fa-linkedin-in"></i></a>
+         <div class="row no-gutters mb-2">
+            <div class="col-3 col-sm-2">
+               <a class="social_icon" href="https://github.com/Davide-L90"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="col-3 col-sm-2">
+               <a class="social_icon" href="https://www.linkedin.com/in/davide-lecci-902858165/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
          </div>
       </div>
-      <div class="Skill_cnt section_cnt">
+      <div class="container-fluid pr-0 pl-1 pl-sm-3">
          <h1 class="title_white">Hard skills</h1>
-         <div class="row_skill">
-            <span class="skill_itm">HTML</span>
-            <span class="skill_itm">CSS</span>
-            <span class="skill_itm">Bootstrap</span>
-         </div>
-         <div class="row_skill">
-            <span class="skill_itm">JavaScript</span>
-            <span class="skill_itm">JQuery</span>
-            <span class="skill_itm">PHP</span>
-         </div>
-         <div class="row_skill">
-            <span class="skill_itm">SCSS</span>
-            <span class="skill_itm">Rest API</span>
-            <span class="skill_itm">Git</span>
-         </div>
-         <div class="row_skill">
-            <span class="skill_itm">MySQL</span>
-            <span class="skill_itm">Wordpress</span>
-            <span class="skill_itm">Laravel</span>
+         <div class="row no-gutters mb-2">
+            <div class="col-6 col-lg-4">
+               Html
+            </div>
+            <div class="col-6 col-lg-4">
+               CSS
+            </div>
+            <div class="col-6 col-lg-4">
+               SCSS
+            </div>
+            <div class="col-6 col-lg-4">
+               JQuery
+            </div>
+            <div class="col-6 col-lg-4">
+               MySql
+            </div>
+            <div class="col-6 col-lg-4">
+               PHP
+            </div>
+            <div class="col-6 col-lg-4">
+               Rest Api
+            </div>
+            <div class="col-6 col-lg-4">
+               Git
+            </div>
+            <div class="col-12 col-lg-4">
+               JavaScript
+            </div>
+            <div class="col-12 col-lg-4">
+               Bootstrap
+            </div>
+            <div class="col-12 col-lg-4">
+               WordPress
+            </div>
+            <div class="col-12 col-lg-4">
+               Laravel
+            </div>
          </div>
       </div>
-      <div class="section_cnt Skill_cnt">
+      <div class="container-fluid pr-0 pl-1 pl-sm-3">
          <h1 class="title_white">Soft skills</h1>
-         <div class="row_skill">
-            <span class="skill_itm soft">Autonomia</span>
-            <span class="skill_itm soft">Flessibilità</span>
-         </div>
-         <div class="row_skill">
-            <span class="skill_itm soft">Cooperazione</span>
-            <span class="skill_itm soft">Precisione</span>
-         </div>
-         <div class="row_skill">
-            <span class="skill_itm soft">Resistenza allo stress</span>
+         <div class="row no-gutters mb-2">
+            <div class="col-12">
+               Autonomia
+            </div>
+            <div class="col-12">
+               Flessibilità
+            </div>
+            <div class="col-12">
+               Cooperazione
+            </div>
+            <div class="col-12">
+               Precisione
+            </div>
+            <div class="col-12">
+               Resistenza allo stress
+            </div>
          </div>
       </div>
    </header>
