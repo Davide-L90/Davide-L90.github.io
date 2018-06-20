@@ -10,14 +10,16 @@ body{
    flex-wrap: wrap;
    max-width: 1000px;
    margin: 25px auto;
-   height: 900px;
+   /* height: 900px; */
+   /* width: 21cm; */
+   min-height: 29.7cm;
 }
 
 header{
    position: relative;
    color: white;
-   height: 100%;
    width: 25%;
+   /* height: 100%; */
    background: #1693A5;
    animation-name: slideDown;
    animation-duration: 2s;
@@ -25,7 +27,7 @@ header{
 }
 
 @keyframes slideDown {
-   0% { top: -100%;}
+   0% { top: -29.7cm;}
    100% {top: 0;}
 }
 
@@ -33,7 +35,7 @@ main{
    position: relative;
    left: 30%;
    width: 75%;
-   height: 100%;
+   /* height: 100%; */
    background-color: #F9F9FF;
    animation-name: slideLeft;
    animation-duration: 2s;
@@ -70,10 +72,40 @@ hr{
    font-size: 28px;
    background-color: #7FFF24;
    font-weight: bold;
+   position: relative;
 }
 
+
+/* ARROW CONTROLS */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+
+  border-left: 28px solid #1693A5;
+  position: absolute;
+  right: -5px;
+  top: -20px;
+  transform: rotate(-45deg);
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+
+  border-right:28px solid #F9F9FF;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  transform: rotate(45deg);
+}
+
+
 #email_line{
-   word-break: break-word;
+   word-break: break-all;
 }
 
 /* social_media is the last section of my
@@ -117,12 +149,14 @@ language I know */
 .main_title{
    margin: 20px 0;
    background-color: #00CDAC;
+   color: white;
+   position: relative;
 }
 
 /* title of institution */
 .institution{
    font-weight: bold;
-   font-size: 18px;
+   font-size: 16px;
 }
 
 /* Media queries */
@@ -141,11 +175,12 @@ language I know */
    main{
       width: 100%;
    }
-   main > *{
-      padding-left: 0;
-   }
 }
 
 @media (max-width: 576px) {
 
 }
+
+/* @media screen {
+
+} */
