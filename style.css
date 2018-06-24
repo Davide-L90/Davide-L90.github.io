@@ -85,7 +85,7 @@ hr{
 
   border-left: 28px solid #1693A5;
   position: absolute;
-  right: -5px;
+  right: -8px;
   top: -20px;
   transform: rotate(-45deg);
 }
@@ -98,11 +98,14 @@ hr{
 
   border-right:28px solid #F9F9FF;
   position: absolute;
-  left: -5px;
+  left: -8px;
   top: -20px;
   transform: rotate(45deg);
 }
 
+.about_me{
+   word-wrap: break-word;
+}
 
 #email_line{
    word-break: break-all;
@@ -137,11 +140,11 @@ language I know */
 .CV_title{
    padding: 20px;
    background: linear-gradient(to top right, #1693A5, #00CDAC);
+   color: white;
 }
 
 .CV_title h1{
    font-size: 40px;
-   color: white;
    font-weight: bold;
 }
 
