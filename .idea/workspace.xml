@@ -60,6 +60,10 @@
               <item name="Davide-L90.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Davide-L90.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Davide-L90.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
