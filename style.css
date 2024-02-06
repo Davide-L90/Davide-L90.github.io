@@ -42,6 +42,14 @@ main{
    animation-fill-mode: forwards;
 }
 
+.italian-language {
+   display: none;
+}
+
+#italian, #english {
+   cursor: pointer;
+}
+
 @keyframes slideLeft {
    0% {left: 130%;}
    100% {left: 0;}
