@@ -1,0 +1,197 @@
+*{
+   font-family: 'Fira Sans Condensed', sans-serif;
+}
+body{
+   background-color: #D7D7E1;
+}
+
+.main_cnt{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1000px;
+   margin: 25px auto;
+   /* height: 900px; */
+   /* width: 21cm; */
+   min-height: 29.7cm;
+}
+
+header{
+   position: relative;
+   color: white;
+   width: 26%;
+   /* height: 100%; */
+   background: #1693A5;
+   animation-name: slideDown;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+   0% { top: -29.7cm;}
+   100% {top: 0;}
+}
+
+main{
+   position: relative;
+   left: 30%;
+   width: 74%;
+   /* height: 100%; */
+   background-color: #F9F9FF;
+   animation-name: slideLeft;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+
+.italian-language {
+   display: none;
+}
+
+#italian, #english {
+   cursor: pointer;
+}
+
+@keyframes slideLeft {
+   0% {left: 130%;}
+   100% {left: 0;}
+}
+/* Container for the my picture */
+.pic-container{
+   width: 100%;
+   margin-top: 15px;
+   text-align: center;
+}
+
+.profile-pic{
+   width: 60%;
+   padding: 5px;
+   border-radius: 50%;
+   border: 2px solid white;
+}
+
+hr{
+   width: 100%;
+   background-color: white;
+   margin: 15px 0;
+}
+
+/* defining every title container */
+.title_white{
+   letter-spacing: 1.5px;
+   font-size: 28px;
+   background-color: #7FFF24;
+   font-weight: bold;
+   position: relative;
+}
+
+
+/* ARROW CONTROLS */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+
+  border-left: 28px solid #1693A5;
+  position: absolute;
+  right: -8px;
+  top: -20px;
+  transform: rotate(-45deg);
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+
+  border-right:28px solid #F9F9FF;
+  position: absolute;
+  left: -8px;
+  top: -20px;
+  transform: rotate(45deg);
+}
+
+.about_me{
+   word-wrap: break-word;
+}
+
+#email_line{
+   word-break: break-all;
+}
+
+/* social_media is the last section of my
+personal info. It contains social icon
+with link to my profiles */
+.social_icon{
+   font-size: 22px;
+   color: white;
+}
+.social_icon:hover{
+   color: yellow;
+}
+/* it's my container to show what programming
+language I know */
+.Skill_cnt .row_skill{
+   display: flex;
+   margin-bottom: 10px;
+}
+.Skill_cnt .row_skill .skill_itm{
+   width: calc(100% / 3);
+   font-size: 18px;
+}
+
+.Skill_cnt .row_skill .skill_itm.soft{
+   width: calc(100% / 2);
+}
+
+/* MAIN SIDE */
+.CV_title{
+   padding: 20px;
+   background: linear-gradient(to top right, #1693A5, #00CDAC);
+   color: white;
+}
+
+.CV_title h1{
+   font-size: 40px;
+   font-weight: bold;
+}
+
+/* title of the main section */
+.main_title{
+   margin: 20px 0;
+   background-color: #00CDAC;
+   color: white;
+   position: relative;
+}
+
+/* title of institution */
+.institution{
+   font-weight: bold;
+   font-size: 16px;
+}
+
+/* Media queries */
+@media (max-width:768px) {
+   .main_cnt{
+      margin: 0;
+      padding: 0;
+   }
+   header{
+      width: 100%;
+      height: auto;
+   }
+   .profile-pic{
+      width: 40%;
+   }
+   main{
+      width: 100%;
+   }
+}
+
+@media (max-width: 576px) {
+
+}
+
+/* @media screen {
+
+} */
