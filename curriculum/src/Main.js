@@ -59,14 +59,21 @@ function Main({ language }) {
 					</div>
 			</div>
 			<div className="container-fluid pr-0">
-				<h3 className="main_title text-right pr-2 english-language">
-					Work experience
+				<h3 className="main_title text-right pr-2">
+					{language.workExperiences}
 					<div className="arrow-left"></div>
 				</h3>
-				<h3 className="main_title text-right pr-2 italian-language">
-					Esperienze lavorative
-					<div className="arrow-left"></div>
-				</h3>
+				<div className="row no-gutters">
+					<div className="time_cnt col-4">
+						<p className="mb-0">{language.maticStart}</p>
+						<p className="mb-0">{language.maticEnd}</p>
+					</div>
+					<div className="col-8 pr-3 pl-1">
+						<p className="mb-0 institution">Soc analyst</p>
+						<p className="mb-0 institution">Maticmind s.p.a.</p>
+						<p>{language.maticDesc}</p>
+					</div>
+				</div>
 				<div className="row no-gutters">
 					<div className="time_cnt col-4">
 						<p className="mb-0">{language.bitStart}</p>
