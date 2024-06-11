@@ -38,7 +38,7 @@ function Sidebar({language, setLanguage}) {
           <div className="col-1 col-md-2 icon_cnt">
             <i className="fas fa-map-marker-alt"></i>
           </div>
-          <div className="col-11 col-md-10">Torino (TO)</div>
+          <div className="col-11 col-md-10">Roma (RM)</div>
         </div>
         <div className="row no-gutters mb-2 pl-3">
           <div className="col-1 col-md-2 icon_cnt">
